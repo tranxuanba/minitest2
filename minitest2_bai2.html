@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Cho trước 1 mảng n phần tử
+    Viết hàm cho phép đếm xem có bao nhiêu phần tử a ( a được nhập vào từ bàn phím)-->
+<input type="number" id="number" placeholder="enter number here ">
+<button onclick="clickMe()">result</button>
+<script>
+    function clickMe() {
+        let array = [1, 2, 6, 8, 4, 7, 9, 5, 2, 6, 8, 4, 3];
+        let value = document.getElementById("number").value;
+        value = Number(value);
+        let index = 0;
+        for (let i = 0; i < array.length; i++) {
+            if (array[i] == value) {
+                index++;
+            }
+        }
+        document.write("co " + index + " phan tu " + value);
+    }
+</script>
+</body>
+</html>

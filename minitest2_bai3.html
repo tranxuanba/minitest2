@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--cho trước 1 mảng gồm n phần tử
+    Viết hàm tính tổng các số nguyên tố trong mảng.-->
+<script>
+     function sumOfPrimes(n) {
+        if (n < 2) return false;
+        if (n < 4) return true;
+        if (n >= 4) {
+            for (let i = 2; i <= Math.sqrt(n); i++) {
+                if (n % i == 0) return false;
+            }
+            return true;
+        }
+     }
+    let array = [1, 2, 4, 5, 67, 7, 3, 7, 4, 8, 4, 3, 7, 4];
+    let sum = 0;
+    for (let i = 0; i < array.length; i++) {
+        if (sumOfPrimes(array[i]) === true) {
+            sum = sum + array[i];
+        }
+    }
+    document.write("tong cac so nguyen to trong mang la: " + sum);
+</script>
+</body>
+</html>

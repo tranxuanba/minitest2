@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Bài 1: Cho trước một mảng n phần tử. Viết hàm in ra số lượng các số chẵn trong mảng-->
+<script>
+    function evenNumber() {
+        let array =[2, 3, 5, 6, 12, 14, 11, 15, 8, 9, 10, 18];
+        let index = 0;
+        for (let i = 0; i < array.length; i++) {
+            if (array[i] % 2 == 0) {
+                index++;
+            }
+        }
+        document.write("so luong cac so chan trong mang la: " + index);
+    }
+    evenNumber();
+</script>
+</body>
+</html>
